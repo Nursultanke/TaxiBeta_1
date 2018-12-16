@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Guest_page"
+    android:padding="20dp"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/gt_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find a race"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="25dp"
+            android:textColor="@color/black"
+
+            />
+
+        <EditText
+            android:id="@+id/gt_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btg_bg"
+            android:hint="from..."
+            android:layout_below="@+id/gt_tv"
+            android:padding="15dp"
+
+            />
+
+        <EditText
+            android:id="@+id/gt_et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gt_et"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btg_bg"
+            android:hint="to..."
+            android:padding="15dp"/>
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showDatePickerDialog"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/gt_et2"
+            >
+            <TextView
+                android:id="@+id/date_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chooseyour date"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:id="@+id/date_et_put"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chooseyour date"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:onClick="showDatePickerDialog"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnnnn"
+            android:layout_marginTop="35dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Search"
+            android:layout_below="@+id/ll1"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btg_bg2"
+            android:layout_marginBottom="10dp"
+            android:onClick="onClick"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
